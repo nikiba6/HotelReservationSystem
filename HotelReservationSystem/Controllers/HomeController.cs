@@ -1,4 +1,5 @@
-﻿using HotelReservationSystem.Models;
+﻿
+using HotelReservationSystem.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
@@ -14,6 +15,10 @@ namespace HotelReservation.Controllers
         }
 
         public IActionResult Index()
+        {
+            return View();
+        }
+        public IActionResult About()
         {
             return View();
         }
