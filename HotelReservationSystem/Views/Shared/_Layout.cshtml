@@ -68,11 +68,9 @@
         </main>
         </div>
         <!--================Header Area =================-->
-        <!--================Banner Area =================-->
+        <!--================Banner Area =================-->     
         
-        
-        <!--================Banner Area =================-->
-       
+        <!--================Banner Area =================-->      
     
         <footer class="footer-area section_gap">
             <div class="container">
@@ -156,6 +154,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
         
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
         <script src="~/js/jquery-3.2.1.min.js"></script>
         <script src="~/js/popper.js"></script>
         <script src="~/js/bootstrap.min.js"></script>
@@ -168,5 +167,6 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
         <script src="~/js/stellar.js"></script>
         <script src="~/vendors/lightbox/simpleLightbox.min.js"></script>
         <script src="~/js/custom.js"></script>
+        @await RenderSectionAsync("Scripts", required: false)
     </body>
 </html>

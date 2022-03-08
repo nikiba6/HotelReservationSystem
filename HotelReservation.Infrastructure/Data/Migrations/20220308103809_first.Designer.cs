@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace HotelReservation.Infrastructure.Data.Migrations
 {
     [DbContext(typeof(HotelReservationDbContext))]
-    [Migration("20220307164839_first")]
+    [Migration("20220308103809_first")]
     partial class first
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using HotelReservation.Data.ViewModels;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace HotelReservation.Controllers
@@ -26,6 +27,16 @@ namespace HotelReservation.Controllers
        //{
        //    return View();
        //}
+       [HttpPost]
+       [ValidateAntiForgeryToken]
+       public IActionResult Register(RegisterViewModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                return Redirect("/");
+            }
+            return View(new { ErrorMessage= } ,"/Error");
+        }
 
         // GET: UserController/Details/5
         public ActionResult Details(int id)
