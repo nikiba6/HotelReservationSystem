@@ -33,9 +33,10 @@ namespace HotelReservation.Controllers
         {
             if (ModelState.IsValid)
             {
-                return Redirect("/");
+                
+                return Redirect("/User/Login");
             }
-            return View(new { ErrorMessage= } ,"/Error");
+            return View();
         }
 
         // GET: UserController/Details/5
